@@ -1,7 +1,7 @@
 # Utils
 Alguns códigos que podem ser reutilizados no futuro
 
-Este repositório possui alguns códigos onde demorei algumas horas para criar a lógica ou encontrar exemplos que resolvessem meu problema, então o objeto é agilizar o desenvolvimento quando houver a necessidade de utilizar esses mesmo códigos
+Este repositório possui alguns códigos onde demorei algumas horas para criar a lógica ou encontrar exemplos que resolvessem meu problema, então o objeto é agilizar o desenvolvimento quando houver a necessidade de utilizar esses códigos
 
 # Limitar a quantidade de casas decimais de um valor decimal
 
