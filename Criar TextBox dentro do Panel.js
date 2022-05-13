@@ -7,8 +7,6 @@ function GetPainelById(painelId){
 	var widgetbody = widgetfrota.childNodes[1];
 	var relativeWrap2 = widgetbody.childNodes[0];
 	var rowfluid = relativeWrap2.childNodes[0];
-	var divTelefone = rowfluid.childNodes[3];
-	var campo = divTelefone.childNodes[0].childNodes[0];
 	return rowfluid;
 }
 
