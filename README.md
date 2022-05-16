@@ -30,6 +30,6 @@ public static decimal FormatarCasaDecimal(decimal valor, int quantidadeCasaDecim
  ~~~
 public string GetValueTextBox()
  {
-   return Request.Form["TextBoxName"].ToLower();
+   return Request.Form["TextBoxName"];
  }
 ~~~
