@@ -24,3 +24,12 @@ public static decimal FormatarCasaDecimal(decimal valor, int quantidadeCasaDecim
         return Convert.ToDecimal(valorToString.Insert(valorToString.Length, zeroString));
     }
 ~~~
+
+# Obter o texto de um TextBox em aspx no C#
+
+ ~~~
+public string GetValueTextBox()
+ {
+   return Request.Form["TextBoxName"].ToLower();
+ }
+~~~
