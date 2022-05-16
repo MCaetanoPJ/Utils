@@ -33,3 +33,21 @@ public string GetValueTextBox()
    return Request.Form["TextBoxName"];
  }
 ~~~
+
+# Executar código JavaScript de dentro do C#
+
+ ~~~
+ <script type="text/javascript">
+        function GetValueTextBoxById(textboxId) {
+            var texto = document.getElementById(textboxId).value;
+            return texto;
+        }
+ </script>
+ 
+public string AlertJS(string textboxId)
+ {
+   var s = new StringBuilder();
+   s.Append(string.Format("GetValueTextBoxById('{0}');", textboxId));
+   ScriptManager.RegisterStartupScript(this, this.GetType(), "GetValue", s.ToString(), true);
+ }
+~~~
