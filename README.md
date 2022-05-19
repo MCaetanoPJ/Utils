@@ -25,7 +25,7 @@ public static decimal FormatarCasaDecimal(decimal valor, int quantidadeCasaDecim
     }
 ~~~
 
-# Obter o texto de um TextBox em aspx no C#
+# Obter o texto de um TextBox em aspx no C# caso o TextBox tenha sido criado via JavaScript
 
  ~~~
 public string GetValueTextBox()
