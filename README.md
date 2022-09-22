@@ -51,3 +51,20 @@ public string AlertJS(string textboxId)
    ScriptManager.RegisterStartupScript(this, this.GetType(), "GetValue", s.ToString(), true);
  }
 ~~~
+
+# Validador de Placa (modelo Mercosul ou modelo antigo)
+~~~
+private bool ValidarPlaca(string placa)
+    {
+        System.Text.RegularExpressions.Regex regex = new System.Text.RegularExpressions.Regex(@"^[a-zA-Z]{3}\-\d{4}$");
+
+        if (regex.IsMatch(placa))
+            return true;
+
+        System.Text.RegularExpressions.Regex regex02 = new System.Text.RegularExpressions.Regex(@"^[a-zA-Z]{3}\-[0-9]{1}[a-zA-Z]{1}[0-9]{2}$");
+        if (regex02.IsMatch(placa))
+            return true;
+
+        return false;
+    }
+~~~
