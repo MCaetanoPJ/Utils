@@ -24,3 +24,14 @@ function marcarToggleButtonByClass(nomeClass, ativar){
 		}
 	}
 }
+
+
+
+//Corrige o bug do ToogleButton que não exibe a cor vermelha
+window.onload = aplicaStyleToggleButtons;
+function aplicaStyleToggleButtons() {
+    var toogleButtons = $('div[class=toggle-button]');
+    if (toogleButtons.length > 0) {
+	toogleButtons.children().css({ width: '151px' });
+    }
+}
